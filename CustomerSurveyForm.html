@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Satisfaction Survey Form</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: gray;
+                color: white;
+                margin: 0;
+                padding: 20px;
+            }
+
+            form {
+                background: white;
+                color: black;
+                max-width: 600px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px black;
+            }
+
+            h1, h2 {
+                color: black;
+                font-weight: bold;
+            }
+
+            textarea {
+                width: 100%;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                resize: none;
+            }
+
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            div {
+                margin-bottom: 20px;
+            }
+
+            div[align="center"] {
+                text-align: center;
+            }
+
+            input[type="reset"],
+            input[type="submit"] {
+                background: black;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="reset"]:hover,
+            input[type="submit"]:hover {
+                background: dimgray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form> 
+            <div>
+                <h1 align="center">Customer Satisfaction Survey Form</h1>
+                <h2>1)Why did you contact customer service? </h2>
+                <label for="comment"></label>
+                <textarea id="comment" rows="8"></textarea>
+            </div>
+
+            <div>
+                <h2>2)What method did you use to contact customer service?</h2>
+                <input type="radio" name="pick" value="cross"> Telephone
+                <input type="radio" name="pick" value="cross"> Mail
+                <input type="radio" name="pick" value="cross"> Email
+                <input type="radio" name="pick" value="cross"> Fox
+                <input type="radio" name="pick" value="cross"> Other<br>
+
+                <label for="comment"></label>
+                <textarea id="comment" rows="1"></textarea>
+            </div>
+
+            <div>
+                <h2>3)How satisfied are you with the time it took customer service to answer your question or resolve your issue?</h2>
+                <input type="radio" name="pick" value="cross"> Very Dissatisfied
+                <input type="radio" name="pick" value="cross"> Dissatisfied
+                <input type="radio" name="pick" value="cross"> Undecided
+                <input type="radio" name="pick" value="cross"> Satisfied
+                <input type="radio" name="pick" value="cross"> Very Satisfied
+            </div>
+
+            <br>
+
+            <div>
+                <h1>Please tell us how much you agree or disagree with the following statements.</h1>
+            </div>
+            <br>
+
+            <div>
+                <h2>4)The customer service representative was knowledgeable and easy to understand</h2>
+                <input type="radio" name="pick" value="cross"> Strongly Disagree
+                <input type="radio" name="pick" value="cross"> Disagree
+                <input type="radio" name="pick" value="cross"> Undecided
+                <input type="radio" name="pick" value="cross"> Agree
+                <input type="radio" name="pick" value="cross"> Strongly Agree
+            </div>
+
+            <div>
+                <h2>5)The customer service representative was able to handle my problem quickly and to my satisfaction</h2>
+                <input type="radio" name="pick" value="cross"> Strongly Disagree
+                <input type="radio" name="pick" value="cross"> Disagree
+                <input type="radio" name="pick" value="cross"> Undecided
+                <input type="radio" name="pick" value="cross"> Agree
+                <input type="radio" name="pick" value="cross"> Strongly Agree
+            </div>
+
+            <br><br><br>
+
+            <div align="center">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
